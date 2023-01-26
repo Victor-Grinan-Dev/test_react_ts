@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+.screen{
+    font-family: 'Neucha', cursive;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(67, 67, 240);
+}
+
+.title{
+    font-size: 50px;
+    color: aliceblue;
+    padding: 2rem;
+    text-transform: uppercase;
+    z-index: 1;
+    text-align: center;
+}
+
+@media(max-width:800px){
+    .title{
+        padding: 1.3rem;
+        font-size: 35px;
+    }
+}
+
+form{
+    position: relative;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+}
+.inputField{
+    position: relative;
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    transition: 0.2s;
+    font-size: 18px;
+    box-shadow: inset 0 0 10px black;
+    transition: 0.2s all;
+}
+
+.inputField:focus{
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.479);
+}
+.submit{
+    position: absolute;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    right: 15px;
+    border: none;
+    background-color:  rgb(67, 67, 240);
+    color: aliceblue;
+    box-shadow: 0 0 7px black;
+    transition: 0.2s all;
+}
+
+.submit:hover{
+    background-color:  rgb(103, 103, 236);
+}
+
+.submit:active{
+    transform: scale(0.6);
+    box-shadow: 0 0 15px black;
+}
