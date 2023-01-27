@@ -10,8 +10,8 @@ type Person = {
     age?:number;
 }
 
-interface Person1 {
-
+interface Guy extends Person{
+    profession:string;
 }
 
 const person:Person = {
